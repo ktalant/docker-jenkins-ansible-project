@@ -1,0 +1,24 @@
+---
+- hosts: "{{ HOSTS }}"
+  become: yes
+  become_method: sudo
+  tasks:
+  - name: testfile creating
+    file:
+      path: /tmp/testfile1.txt
+      state: touch 
+  - name: adding user
+    user:
+      name: bob
+      state: present
+  - name: install packages
+    package:
+      name: "{{ item }}"
+      state: present
+    with_items:
+      - elinks
+      - telnet
+      - httpd
+      - curl
+      - wget
+

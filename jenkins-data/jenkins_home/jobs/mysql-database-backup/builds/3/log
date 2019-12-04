@@ -1,0 +1,21 @@
+Started by user unknown or anonymous
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/mysql-database-backup
+[SSH] script:
+DATABASE_HOST_NAME="db-host"
+DATABASE_USER_NAME="root"
+AWS_SECRET_KEY=**********
+DATABASE_NAME="junaidb"
+MYSQL_USER_PASSWORD=**********
+S3_BUCKET_NAME="junai-db"
+
+/tmp/mysql-backup.sh $DATABASE_USER_NAME $DATABASE_HOST_NAME  $MYSQL_USER_PASSWORD $DATABASE_NAME  $AWS_SECRET_KEY  $S3_BUCKET_NAME
+
+[SSH] executing...
+/tmp/mysql-backup.sh: line 12:  : command not found
+Completed 1.2 KiB/1.2 KiB (13.3 KiB/s) with 1 file(s) remainingupload: ../../tmp/junaidb-2019-11-29.sql to s3://junai-db/junaidb-2019-11-29.sql
+
+[SSH] completed
+[SSH] exit-status: 0
+
+Finished: SUCCESS

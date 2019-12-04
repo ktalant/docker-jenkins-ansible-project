@@ -1,0 +1,21 @@
+Started by user unknown or anonymous
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/mysql-database-backup
+[SSH] script:
+DATABASE_HOST_NAME="db-host"
+DATABASE_USER_NAME="root"
+AWS_SECRET_KEY=**********
+DATABASE_NAME="talantdb"
+MYSQL_USER_PASSWORD=**********
+S3_BUCKET_NAME="talant-mysql-backup"
+
+/tmp/mysql-backup.sh $DATABASE_USER_NAME $DATABASE_HOST_NAME  $MYSQL_USER_PASSWORD $DATABASE_NAME  $AWS_SECRET_KEY  $S3_BUCKET_NAME
+
+[SSH] executing...
+/tmp/mysql-backup.sh: line 12:  : command not found
+Completed 1.8 KiB/1.8 KiB (22.2 KiB/s) with 1 file(s) remainingupload: ../../tmp/talant-db-2019-11-29.sql to s3://talant-mysql-backup/talant-db-2019-11-29.sql
+
+[SSH] completed
+[SSH] exit-status: 0
+
+Finished: SUCCESS

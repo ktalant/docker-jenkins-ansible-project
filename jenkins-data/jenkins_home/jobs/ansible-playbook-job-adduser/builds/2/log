@@ -1,0 +1,27 @@
+Started by user unknown or anonymous
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/ansible-playbook-job-adduser
+[ansible-playbook-job-adduser] $ ansible-playbook /var/jenkins_home/ansible/playboo-add-user.yaml -i /var/jenkins_home/ansible/hosts -f 5
+
+PLAY [centos-ssh-vm] ***********************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [centos-ssh-vm]
+
+TASK [testfile creating] *******************************************************
+changed: [centos-ssh-vm]
+
+TASK [adding user] *************************************************************
+ok: [centos-ssh-vm]
+
+TASK [install packages] ********************************************************
+ok: [centos-ssh-vm] => (item=elinks)
+ok: [centos-ssh-vm] => (item=telnet)
+ok: [centos-ssh-vm] => (item=httpd)
+ok: [centos-ssh-vm] => (item=curl)
+ok: [centos-ssh-vm] => (item=wget)
+
+PLAY RECAP *********************************************************************
+centos-ssh-vm              : ok=4    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+Finished: SUCCESS

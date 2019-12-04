@@ -1,0 +1,6 @@
+Started by user [8mha:////4GMKaW/HmvHN6tzkaVhlq3SfuOcvRiw2PEdGVtqlK8V9AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYe/dLi1CL9kkSgKSUAradFD8EAAAA=[0mTalantbek
+Building in workspace /var/jenkins_home/workspace/talant-job1
+[talant-job1] $ /bin/sh -xe /tmp/jenkins7397237767792657908.sh
++ /tmp/code1.sh true Talant US
+Hello, Talant from US
+Finished: SUCCESS

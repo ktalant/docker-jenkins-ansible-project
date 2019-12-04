@@ -1,0 +1,14 @@
+Started by user unknown or anonymous
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/talant-remote-job
+[SSH] script:
+
+NAME=Talant
+echo "Hello $NAME today's date and time is $(date)" > /tmp/hello.txt
+
+[SSH] executing...
+
+[SSH] completed
+[SSH] exit-status: 0
+
+Finished: SUCCESS

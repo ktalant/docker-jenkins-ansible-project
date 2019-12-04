@@ -1,0 +1,15 @@
+---
+- hosts: "{{ HOSTS }}"
+  become: yes
+  become_method: sudo
+  tasks:
+  - name: create multiple directories
+    file:
+      path: "/tmp/{{ item }}"
+      state: directory
+      mode: 0755
+    with_items:
+      - dir1
+      - dir2
+      - dir3
+      

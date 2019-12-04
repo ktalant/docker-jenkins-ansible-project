@@ -1,0 +1,17 @@
+Started by user unknown or anonymous
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/remote-batch-2
+[SSH] executing pre build script:
+
+NAME=Samara
+echo "Hello Samara!!! Today is $(date)" > /tmp/jany.txt
+
+
+
+[SSH] completed
+[SSH] exit-status: 0
+
+[SSH] executing post build script:
+
+
+Finished: SUCCESS
